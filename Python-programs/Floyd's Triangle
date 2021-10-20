@@ -1,0 +1,13 @@
+#Floyd's triangle is a right-angled triangular array of natural numbers, used in computer science education.
+#It is defined by filling the rows of the triangle with consecutive numbers, starting with a 1 in the top left corner.
+
+n = int(input("Enter the number of rows: "))
+row, val = 1, 1
+while(row<=n):
+  col = 1
+  while(col <= row):
+    print(val, end=' ')
+    val+=1
+    col+=1
+  row += 1
+  print()
